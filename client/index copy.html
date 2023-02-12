@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="game.css">
+        <title>Take Two | RaftPilot</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="login-container" class="modal center-box">
+                <h1 id="login-heading">Please enter your name</h1>
+                <label id="name-label">Name: </label>
+                <input id="name-input" autocomplete="off"/>
+                <button id="login-button" onclick="logIn()">confirm</button>
+        </div>
+
+        <div id="waiting-screen" class="modal center-box">
+            <h1>Waiting for opponents</h1>
+            <button id="start-button" class="modal" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="game-container">
+            
+        </div>
+    </body>
+</html>
